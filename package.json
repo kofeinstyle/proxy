@@ -1,0 +1,19 @@
+{
+  "name": "proxy",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "debug": "~2.6.9",
+    "dotenv": "^5.0.1",
+    "express": "~4.16.0",
+    "express-http-proxy": "^1.2.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "raw-body": "^2.3.3",
+    "request": "^2.85.0"
+  }
+}
