@@ -1,5 +1,23 @@
 <?php
-		$_GET['url'] = 'http://159.224.199.76:8000/api/test/test1';
+
+
+if (!function_exists('getallheaders'))
+{
+	function getallheaders()
+	{
+		$headers = array ();
+		foreach ($_SERVER as $name => $value)
+		{
+			if (substr($name, 0, 5) == 'HTTP_')
+			{
+				$headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+			}
+		}
+		return $headers;
+	}
+}
+
+$_GET['url'] = 'http://159.224.199.76:8000/api/test/test1';
 
 		$method = $_SERVER['REQUEST_METHOD'];
 		if ($_GET && $_GET['url']) {
