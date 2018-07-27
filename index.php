@@ -17,7 +17,7 @@ if (!function_exists('getallheaders'))
 	}
 }
 
-$_GET['url'] = 'http://159.224.199.76:8000/api/fan/store/paypal/webhook';
+$_GET['url'] = 'http://develop.api.rebellionretailsite.com/api/fan/store/paypal/webhook';
 
 		$method = $_SERVER['REQUEST_METHOD'];
 		if ($_GET && $_GET['url']) {
